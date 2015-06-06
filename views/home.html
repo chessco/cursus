@@ -1,0 +1,111 @@
+{% extends 'base_course.html' %}
+
+{% block gcb_page_info %}
+  if ('gcbSetPageInfo' in window) {
+    gcbSetPageInfo({
+      'page_type': 'forum',
+    });
+  }
+{% endblock %}
+
+{% block subtitle %}
+  {# I18N: Title of the webpage. #}
+  - {{ gettext('Forum') }}
+{% endblock subtitle %}
+
+{% block top_content %}
+
+    <!-- Bootstrap core CSS -->
+    <!--link href="/assets/css/bootstrap.min.css" rel="stylesheet"-->
+	<!--link href="/assets/css/justified-nav.css" rel="stylesheet"-->
+    <style type="text/css">
+    .subtitle {
+      font-style:italic;
+      font-size:22px;
+    }
+    .warning {
+      color: red;
+      font-size:18px;
+      margin: 0px;
+      padding: 0px;
+    }
+    .underline {
+      font-style:bold;;
+      text-decoration:underline;
+    }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+   <!-- <link href="/assets/css/justified-nav.css" rel="stylesheet">-->
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+      <!-- Jumbotron -->
+	  <br>
+	  <br>
+	  <br>
+	  
+      <div class="jumbotron">
+        <h1>xCursus</h1>
+        <h2 class="warning">Nota: El sitio esta en BETA. Pronto estaran disponibles los materiales.<br> Durante la fase beta del programa.</h2>
+        <h2 class="subtitle">Capacitacion inteligente, Ingenieria de software, and oportunidades de emprendimiento</h2>
+        <div style="margin: 20px;"><img width="50%" src="/static/images/fisher_mutchler.jpg" alt="Rose-Hulman professors"></div>
+        <p class="lead">xCursus esta disponible completamente gratis, serie de <b>cursos</b> online,
+		una <b>competencia</b> anual con los mejores emprendimientos,y una <b>platafroma</b> para
+		inspirar la inovacion y oportunidades de emprendimiento.  Cursos estan basados en contenido
+		desarrollado por la comunidad emprendedora y universidades 	<a href="http://www.itson.mx">Itson entre otros</a>
+		con estudiantes,emprendedor y el sector social  como publico objetivo.</p>
+        <p><a class="btn btn-lg btn-success" href="https://docs.google.com/forms/d/1XzB4Q5XZL_HbSQk_L1TJJtc2dKHxKVSfQhYSztqvMw0/viewform" role="button">Registrate</a></p>
+      </div>
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Cursos</h2>
+		<p>Visita nuestra <b>serie de cursos</b> para ver la oferta de cursos. Actualmente tenemos disponibles, los siguientes cursos terminados <strong>Programador .Net Jr.</strong>, <a href="/agricultura_organica"><strong>Agricultura organica</strong></a> para el campo mexicano, con contenido agregado el 2014, y cursos parciales de reposteria.  
+<!--  The next sentence will be true once all the course material is created. -->
+<!-- 		The courses are designed for Rose-Hulman alumni from any major so they assume no prior knowledge in programming if you start at the beginning.  The courses build on one another beginning with Python, moving into Arduino, and then finishing with iOS and Android integration for your robots!  Coming by the summer of 2015.</p> -->
+          <p><a class="btn btn-primary" href="/course" role="button">Ver detalles »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <h2>Competencia</h2>
+          <p>There is an <b>annual competition</b> planned to take place at Rose-Hulman Homecoming beginning the Homecoming 2015.  The competition will have two components, a <b>robotics challenge</b> and a "<a href="http://abc.go.com/shows/shark-tank">Shark Tank</a>" style <b>product pitch competition</b>, where students are encouraged to think of products they could build based on the skills they've gained.</p>
+          <p><a class="btn btn-primary" href="/competition" role="button">View details »</a></p>
+       </div>
+        <div class="col-lg-4">
+          <h2>Platform</h2>
+          <p>Both the <b>courses</b> and the <b>competition</b><br> make HEAVY use of the ROSEbotics <b>platform</b>.<br>  The platform will update every few years, but the current platform uses a <a href="http://www.dfrobot.com/index.php?route=product/product&filter_name=bluno%20nano&product_id=1122#.U2EwMvldV8E">Bluno Nano</a>, <a href="http://www.pololu.com/product/1551">Rover 5 tank base</a>, and <a href="http://www.dagurobot.com/search.php?encode=YToyOntzOjg6ImtleXdvcmRzIjtzOjg6ImV4cGxvcmVyIjtzOjE4OiJzZWFyY2hfZW5jb2RlX3RpbWUiO2k6MTM5ODg3ODMzMzt9">Explorer PCB kit</a>.  The Rosebotics platform will be available beginning the summer of 2015 on the course material launch date.</p>
+          <p><a class="btn btn-primary" href="/platform" role="button">View details »</a></p>
+        </div>
+      </div>
+
+      <!-- Site footer -->
+      <div class="footer">
+        <p>Desarrollado por estudiantes, facultad, y staff en <a href="http://www.rose-hulman.edu/robotics">Multidiciplinary Minor in Robotics</a> available at <a href="http://www.rose-hulman.edu">Rose-Hulman</a></p>
+      </div>
+      
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  
+
+{% endblock %}
+
+{% block main_content %}
+
+{% endblock %}
